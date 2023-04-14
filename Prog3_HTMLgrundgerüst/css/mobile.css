@@ -1,0 +1,99 @@
+@media screen and(max-width:768px) {
+    * {
+        /* source-sans-pro-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('source-sans-pro-v21-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('source-sans-pro-v21-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+    }
+    .navbar ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: right;
+    
+    }
+    .navbar li{
+        list-style: none;
+        padding-right: 5em;
+    }
+    .wrapper {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-areas: 
+        "pic"
+        "hd"
+        "txt"
+        "hd1"
+        "txt1"
+        "hd2"
+        "txt2"
+    
+    }
+    
+    .wrapper > div{
+        padding: 2em
+    }
+    .wrapper > .box3{
+        background-color: rgb(215, 200, 237);
+    }
+    .wrapper > .box4{
+        background-color: rgb(186, 197, 255);
+    }
+    .wrapper > .box5{
+        background-color: rgb(255, 224, 199);
+    }
+    .box1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        grid-area: pic;
+    }
+    .box1 img{
+        width: 50%;
+    }
+    .boxt{
+       justify-content: center;
+       align-items: center;
+       display: flex;
+       grid-area: hd;
+    }
+    .boxt1{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        grid-area: hd1;
+     }
+     .boxt2{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        grid-area: hd2;
+     }
+    .box3{
+        justify-content: center;
+       align-items: center;
+       display: flex;
+       border-radius: 20px;
+       grid-area: txt;   
+    }
+    .box4{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 20px;
+        grid-area: txt1;
+    }
+    .box5{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 20px;
+        grid-area: txt2;
+    }
+    
+}
